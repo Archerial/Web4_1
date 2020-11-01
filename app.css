@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebebeb;
+}
+
+a,
+a:hover,
+a:focus {
+  transition: all 0.4s;
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7em;
+  color: #999;
+  font-weight: 250;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  height: 70px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  padding-top: 1.2em;
+  background-color: #fff;
+  padding-bottom: 1.2em;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+svg {
+  margin-right: 8px;
+  color: #fff;
+}
+
+button svg {
+  margin: 0;
+}
+
+#sidebar ul.components {
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+#sidebar {
+  min-height: 100vh;
+  width: 250px;
+  color: #fff;
+  transition: all 0.3s;
+  top: 0;
+  position: fixed;
+  background: #556ca1;
+}
+
+#sidebar.active {
+  margin-left: -200px;
+}
+
+#sidebar.active .sidebar-header,
+#sidebar.active .components {
+  opacity: 0;
+}
+
+a[data-toggle='collapse'] {
+  position: relative;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+#sidebar ul li a {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 1.2rem;
+  display: block;
+  font-size: 1.1em;
+}
+
+
+#sidebar ul li a:hover {
+  color: #3b4c94;
+  background: #fff;
+}
+
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #0645ff;
+}
+
+.btn.btn-collapse {
+  height: 40px;
+  width: 40px;
+  margin: 2.5px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#sidebar.active .container-collapse-btn {
+  justify-content: flex-end;
+}
+
+.container-collapse-btn {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.input-group {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.input-group div {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.input-group div > label {
+  margin: 0 0 0 0.4em;
+}
+
+.container-main {
+  min-height: 40vh;
+}
+
+.content {
+  position: relative;
+  padding-bottom: 90px;
+  margin-left: 250px;
+  color: #666666;
+  min-height: 100vh;
+}
+
+.container-card-left {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.container-card-right {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.card-header {
+  font-size: 16px;
+}
+
+.article-blue {
+  padding-left: 0;
+}
+
+.article-green {
+  padding-right: 0;
+}
+
+.col-3 .card .card-body .card-title,
+.col-3 .card .card-body ul {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.col-3 .card .card-body .card-title {
+  text-transform: uppercase;
+}
+
+.col-3 .card .card-body ul span {
+  font-weight: 700;
+}
+
+.title-label,
+.list-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.title-label .title-top,
+.list-label .list-top {
+  width: 50%;
+}
+
+.title-label .title-bottom-first,
+.list-label .list-bottom-first {
+  width: 60%;
+}
+
+.title-label .title-bottom-second,
+.list-label .list-bottom-second {
+  width: 40%;
+}
+
+.title-label h5,
+.list-label ul {
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+}
+
+.list-label ul:nth-child(2) {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.container-statistic {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-statistic svg {
+  color: #ebebeb;
+}
+
+.list-data ul {
+  margin-bottom: 0;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.btn-group button {
+  margin: 0 5px 0 5px;
+  width: 40px;
+  height: auto !important;
+}
+
+.article-blue .card .card-body .card-title {
+  color: blue;
+}
+
+.article-red .card .card-body .card-title {
+  color: red;
+}
+
+.article-orange .card .card-body .card-title {
+  color: orange;
+}
+
+.article-green .card .card-body .card-title {
+  color: green;
+}
+
+.article-blue .card {
+  border-left: 3px solid blue;
+}
+
+.article-red .card {
+  border-left: 3px solid red;
+}
+
+.article-orange .card {
+  border-left: 3px solid orange;
+}
+
+.article-green .card {
+  border-left: 3px solid green;
+}
